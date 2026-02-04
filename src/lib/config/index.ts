@@ -14,9 +14,11 @@ export type {
   FeaturedCategory,
   FeaturedSeries,
   FeaturedSeriesLinks,
-  FriendLink,
-  FriendsConfig,
-  FriendsIntro,
+  Project,
+  ProjectLinks,
+  ProjectStatus,
+  ProjectsConfig,
+  ProjectsIntro,
   RouterItem,
   SiteBasicConfig,
   SiteYamlConfig,
@@ -24,3 +26,5 @@ export type {
   SocialConfig,
   SocialPlatform,
 } from './types';
+
+export { PROJECT_STATUS } from './types';

@@ -55,7 +55,8 @@ function selectAdapter() {
   const isDev = process.env.NODE_ENV !== 'production';
 
   // Determine if adapter is needed
-  const needsAdapter = isDev ? cmsConfig?.enabled : true;
+  // For static deployment (Nginx/Apache), set to false in production
+  const needsAdapter = isDev ? cmsConfig?.enabled : false;
 
   // Static build without adapter
   if (!needsAdapter) {
@@ -117,7 +118,8 @@ function conditionalSnowfall() {
 // https://astro.build/config
 export default defineConfig({
   site: yamlConfig.site.url,
-  adapter,
+  output: 'static', // Force static output for Nginx deployment
+  // adapter removed for static build
   compressHTML: true,
   markdown: {
     // Enable GitHub Flavored Markdown

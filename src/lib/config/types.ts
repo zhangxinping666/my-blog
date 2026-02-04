@@ -85,29 +85,58 @@ export interface SocialPlatform {
 export type SocialConfig = Record<string, SocialPlatform>;
 
 // =============================================================================
-// Friends Configuration
+// Projects Configuration
 // =============================================================================
 
-export interface FriendLink {
-  site: string;
-  url: string;
-  owner: string;
-  desc: string;
-  image: string;
+/** 项目状态常量 */
+export const PROJECT_STATUS = {
+  ACTIVE: 'active',
+  ARCHIVED: 'archived',
+  WIP: 'wip',
+} as const;
+
+export type ProjectStatus = (typeof PROJECT_STATUS)[keyof typeof PROJECT_STATUS];
+
+/** 项目链接结构 */
+export interface ProjectLinks {
+  /** 主链接 */
+  primary: string;
+  /** GitHub 仓库（可选） */
+  github?: string;
+  /** 在线演示（可选） */
+  demo?: string;
+}
+
+/** 项目信息 */
+export interface Project {
+  /** 项目名称 */
+  name: string;
+  /** 项目描述 */
+  description: string;
+  /** 项目链接 */
+  links: ProjectLinks;
+  /** 项目封面图（可选） */
+  image?: string;
+  /** 技术标签 */
+  tags: string[];
+  /** 项目状态 */
+  status: ProjectStatus;
+  /** 主题色（可选） */
   color?: string;
 }
 
-export interface FriendsIntro {
+/** 项目页面介绍 */
+export interface ProjectsIntro {
+  /** 页面标题 */
   title: string;
+  /** 副标题（可选） */
   subtitle?: string;
-  applyTitle?: string;
-  applyDesc?: string;
-  exampleYaml?: string;
 }
 
-export interface FriendsConfig {
-  intro: FriendsIntro;
-  data: FriendLink[];
+/** 项目配置 */
+export interface ProjectsConfig {
+  intro: ProjectsIntro;
+  data: Project[];
 }
 
 // =============================================================================
@@ -443,7 +472,7 @@ export interface SiteYamlConfig {
   /** Featured series configuration - supports array (multiple series) or single object (legacy) */
   featuredSeries?: FeaturedSeriesItem[] | FeaturedSeriesItem;
   social?: SocialConfig;
-  friends?: FriendsConfig;
+  projects?: ProjectsConfig;
   announcements?: AnnouncementConfig[];
   content?: ContentConfig;
   navigation?: RouterItem[];
