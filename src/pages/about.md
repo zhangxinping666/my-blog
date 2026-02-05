@@ -2,32 +2,39 @@
 layout: ../layouts/AboutLayout.astro
 title: "About"
 date: 2025-01-03 01:01:33
-description: "关于我？"
+description: "关于我"
 ---
 
-## 你好，这里是余弦
+## 你好，我是心
 
-[![github badge](https://img.shields.io/badge/dynamic/json?color=blue&label=Github&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dyusixian)](https://github.com/yusixian)
+一名大三在读的前端程序员，用代码构建世界，用热爱点亮生活。
 
-cosine = 余弦 = cos
+> 愿做一朵自由生长的花 \
+> 在代码与旋律间穿行 \
+> 不问终点，只享沿途风景
 
-愿热情永存，愿热爱不灭，愿生活无憾
+### 关于我
 
-> 我们 都只是无名之辈 \
-> 做你自己最喜欢的事 \
-> 像花一样 肆意绽放 \
-> 不去管 有没有人欣赏
+白天敲代码，晚上组队开黑。在 **王者峡谷** 和 **和平精英** 的战场上挥洒热血，偶尔 carry 全场，更多时候快乐躺赢。
 
-### 找到我
+喜欢一切美好的事物——
 
-个人 Telegram 前端频道：日常碎碎念，偶尔掉落优质前端博文推荐、学习资源等
+**花草树木**，路边的野花、窗台的绿植，都能让我驻足许久。生命的绽放总是令人感动。
 
-https://t.me/cosine_front_end
+**旅行**，背上行囊去看不同的风景，感受每座城市独特的呼吸。世界那么大，想一点点去丈量。
 
-Gitbook 前端学习记录
+**舞蹈**，让身体跟随节拍自由流动，是释放也是表达。
 
-https://book.cosine.ren/
+**音乐**，耳机里的旋律是日常的 BGM，代码写累了就听几首歌，灵感说不定就来了。
 
-[![GitHub State](https://git-stats.cosine.ren/api?username=yusixian&theme=dark&show_icons=true&hide_border=true)](https://github.com/anuraghazra/github-readme-stats)
+### 前端之路
 
-[![GitHub Streak](https://github-readme-streak-stats-rust-tau.vercel.app?user=yusixian&theme=dark&date_format=%5BY%20%5DM%20&hide_border=true)](https://git.io/streak-stats)
+热爱前端开发，享受把设计稿变成鲜活页面的成就感。
+
+每一行代码都是与这个世界对话的方式，每一个像素都值得被认真对待。
+
+还在学习的路上，保持好奇，持续成长。
+
+---
+
+*如果你也喜欢这些，欢迎找我聊天呀~*
