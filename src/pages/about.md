@@ -7,6 +7,8 @@ description: "关于我"
 
 ## 你好，我是心
 
+[![GitHub](https://img.shields.io/badge/GitHub-zhangxinping666-blue?logo=github)](https://github.com/zhangxinping666)
+
 一名大三在读的前端程序员，用代码构建世界，用热爱点亮生活。
 
 > 愿做一朵自由生长的花 \
